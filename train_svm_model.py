@@ -12,7 +12,7 @@ from transformers import BertTokenizer, BertModel
 import pickle
 
 
-file_path = "D:/2024/NCI/Semester 3/Practicum 2/GitHub/BERT test/BERTSentiment/spam.csv" 
+file_path = "D:/2024/NCI/Semester 3/Practicum 2/GitHub/BERT test/BERTSentiment/spam_.csv" 
 df = pd.read_csv(file_path, encoding="latin-1")
 #df.head()
 
@@ -56,7 +56,7 @@ svm_model.fit(X_train, y_train)
 print("SVM model trained successfully!")
 
 
-# Save the trained SVM model to a file
+# Generates model
 def generate_svm():
     with open("svm_model.pkl", "wb") as f:
         pickle.dump(svm_model, f)
