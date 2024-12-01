@@ -1,8 +1,10 @@
-scikit-learn
-pandas
-numpy
+fastapi
 nltk
+numpy
+pandas
+pickle5
+pydantic
+scikit-learn
 torch
 transformers
-fastapi
 uvicorn
